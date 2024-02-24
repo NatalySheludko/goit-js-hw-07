@@ -1,31 +1,22 @@
-"use strict";
 
-const customer = {
-  username: "Mango",
-  balance: 24000,
-  discount: 0.1,
-  orders: ["Burger", "Pizza", "Salad"],
+const totalCategories = document.querySelectorAll(".item");
 
-  getBalance() {
-    return this.balance;
-  },
-  getDiscount() {
-    return this.discount;
-  },
-  setDiscount(value) {
-    this.discount = value;
-  },
-  getOrders() {
-    return this.orders;
-  },
-  addOrder(cost, order) {
-    this.balance -= cost - cost * this.discount;
-    this.orders.push(order);
-  },
-};
+console.log(`Numbers of categories: ${totalCategories.length}`);
 
-customer.setDiscount(0.15);
-console.log(customer.getDiscount());
-customer.addOrder(5000, "Steak");
-console.log(customer.getBalance());
-console.log(customer.getOrders());
+const categoryTitle = document.querySelectorAll(".item > h2");
+
+console.log(`Category: ${categoryTitle[0].textContent}`);
+
+const categoryElements = document.querySelectorAll(".item > ul");
+
+console.log(`Elements: ${categoryElements[0].children.length}`);
+console.log(`Category: ${categoryTitle[1].textContent}`);
+console.log(`Elements: ${categoryElements[1].children.length}`);
+console.log(`Category: ${categoryTitle[2].textContent}`);
+console.log(`Elements: ${categoryElements[2].children.length}`);
+
+
+
+
+
+
