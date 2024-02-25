@@ -19,7 +19,7 @@ function handleSubmit(event) {
     };
 
     console.log(formInfo);
-  }
 
-  event.currentTarget.reset();
+    event.currentTarget.reset();
+  }
 }
