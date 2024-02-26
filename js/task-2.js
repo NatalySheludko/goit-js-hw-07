@@ -29,14 +29,17 @@ const imagesGallery = document.querySelector(".gallery");
 
 imagesGallery.style.listStyle = "none";
 imagesGallery.style.display = "flex";
+imagesGallery.style.justifyContent = "center";
 imagesGallery.style.flexWrap = "wrap";
-imagesGallery.style.gap = "10px";
+imagesGallery.style.columnGap = "24px";
+imagesGallery.style.rowGap = "49px";
+imagesGallery.style.marginTop = "86px";
 
 function createGallery(images) {
   return images
     .map(
       image => `<li class="picture-list"> 
-	<img src="${image.url}" alt="${image.alt}" width="600" height="400">
+	<img src="${image.url}" alt="${image.alt}" width="360" height="300">
 	</li>`
     )
     .join("");
