@@ -14,10 +14,12 @@ function getRandomHexColor() {
 }
 
 const userNumber = document.querySelector("input");
+
 userNumber.style.border = "1px solid #808080";
 userNumber.style.borderRadius = "8px";
 userNumber.style.padding = "8px 72px";
 userNumber.style.width = "150px";
+userNumber.style.paddingRight = "20px";
 
 userNumber.addEventListener("input", handleInput);
 
