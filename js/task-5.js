@@ -32,9 +32,8 @@ clickBtn.addEventListener("click", handleClick);
 
 function handleClick() {
   const randomColor =
-    getRandomHexColor(); /* обязательно нужна переменная для создания одного единого цвета 
-	потому что если ее не использовать и ниже вставить просто названия функции рандом то будет образовываться два разных цвета*/
-
-  changeBgColor.style.backgroundColor = randomColor; //!getRandomHexColor() - так нельзя
-  getColorValue.textContent = randomColor; //!getRandomHexColor() - так нельзя
+		getRandomHexColor(); 
+	
+  changeBgColor.style.backgroundColor = randomColor; я
+  getColorValue.textContent = randomColor; 
 }
